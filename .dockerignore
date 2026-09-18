@@ -1,0 +1,13 @@
+.git/
+.gitignore
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+data/
+nohup.out
+.pythonlibs/
+attached_assets/
+*.md
+.replit
