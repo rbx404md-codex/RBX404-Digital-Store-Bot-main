@@ -19,7 +19,6 @@ from handlers import root_router
 from middlewares import AccessMiddleware
 from utils.throttling import ThrottlingMiddleware
 # Add import after line 20:
-from web_portal_distribution import get_distribution_app
 
 # In async main(), after start_web_server call (line ~105):
 # Add distribution app to web server:
