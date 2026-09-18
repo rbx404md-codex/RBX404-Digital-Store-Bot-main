@@ -157,8 +157,13 @@ async def main() -> None:
     await dp.start_polling(bot)
 
 
-if __name__ == "__main__":
+raiseif __name__ == "__main__":
     try:
         asyncio.run(main())
-    except (KeyboardInterrupt, SystemExit):
-        log.info("Bot stopped.")
+    except KeyboardInterrupt:
+        log.info("Bot stopped by keyboard interrupt.")
+    except SystemExit:
+        raise
+    except Exception:
+        log.exception("BOT CRASHED")
+        raise
