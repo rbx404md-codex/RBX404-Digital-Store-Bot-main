@@ -157,7 +157,7 @@ async def main() -> None:
     await dp.start_polling(bot)
 
 
-raiseif __name__ == "__main__":
+if __name__ == "__main__":
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
